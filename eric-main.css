@@ -1,0 +1,205 @@
+html {
+    width: 100vw;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* width: 100%; */
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+main {
+    padding: 0% 50px 20px 50px;
+}
+
+header {
+    padding-left: 50px;
+}
+
+nav {
+    height: 5em;
+    width: 100vw;
+    background-color: darksalmon;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    border-bottom: 1px solid maroon;
+    line-height: 5em;
+}
+
+nav ul {
+    list-style-type: none;
+    width: 100vw;
+    text-align: center;
+    margin: 0px;
+    padding-left: 0px;
+}
+
+nav li {
+    float: left;
+    background-color: coral;
+    height: 100%;
+    width: 25vw;
+    position: relative;
+    text-transform: uppercase;
+}
+
+nav li:hover {
+    background-color: white;
+    border-bottom: 3px solid maroon;
+    cursor: pointer;
+}
+
+nav li a {
+    text-decoration: none;
+    color: maroon;
+    font-weight: 700;
+}
+
+.national-dish {
+    text-decoration: underline dotted green;
+}
+
+.countries {
+    margin-top: 2em;
+    table-layout: fixed;
+    width: 100%;
+    border: 1px solid coral;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.countries th, td {
+    padding: 10px;
+    border-right: 1px solid coral;
+}
+
+.countries th {
+    border-bottom: 2px solid coral;
+}
+
+h2 {
+    color: coral;
+}
+
+#eric-willms {
+    text-transform: uppercase;
+}
+
+#contents {
+    background-color: bisque;
+    width: 25%;
+    padding: 1em;
+    border-color: coral;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 1em;
+    box-shadow: 2px 2px 9px grey;
+    float: right;
+}
+
+#contents ul {
+    list-style-type: none;
+    padding: 0px;
+    font-weight: 700;
+}
+
+#contents a {
+    text-decoration: none;
+    color: chocolate;
+}
+
+#contents li {
+    padding-left: 25px;
+    position: relative;
+    background-color: lightgrey;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+    border: 1px solid grey;
+}
+
+#contents li::before {
+    content: '';
+    position: absolute;
+    /* background-color: chocolate; */
+    /* padding: 5px; */
+    left: 1px;
+    top: 5px;
+    border-left: 8px solid chocolate;
+    border-right: 8px solid transparent;
+    border-top: 8px solid transparent;
+    transform: rotate(-135deg);
+    /* top: 1.3em; */
+    /* left: 0.6em; */
+}
+
+#contents a:hover {
+    color: coral;
+}
+
+#contents li:hover {
+    transform: scale(1.05);
+}
+
+#contents:hover {
+    /* transform: scale(1.05); */
+}
+
+#basic-info {
+    display: block;
+    float: left;
+}
+
+#basic-info ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#early-life {
+    clear: left;
+    padding-right: 50px;
+}
+
+footer {
+    text-align: center;
+}
+
+ul.countries li {
+    list-style-type: none;
+}
+
+ul.countries li::before {
+    content: '☻  ';
+    color: green;
+}
+
+#christmas-tree {
+    width: 10%;
+    text-align: center;
+}
+
+#christmas-tree:hover{
+    animation-name: tree;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    /* animation-timing-function: ease; */
+    /* animation-direction: alternate; */
+}
+
+@keyframes tree {
+    0% {
+        transform: rotate(-45deg);
+    }
+
+    50% {
+        transform: rotate(45deg);
+    }
+
+    100% {
+        transform: rotate(-45deg) scale(150%);
+    }
+}
